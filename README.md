@@ -37,3 +37,10 @@ REGION=
 CERT_EMAIL=
 ``` 
 
+Once you set those up you can run:
+
+```
+eb create -s
+```
+
+This will prompt you to name your environment and DNS names, they should be the same as what you set for your ENV_NAME variable in the https-single-intstance config script.
