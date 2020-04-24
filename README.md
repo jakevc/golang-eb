@@ -52,3 +52,12 @@ eb open
 ```
 
 and your application will open in your web browser.
+
+
+## If eb create fails
+
+Make sure your ENV_NAME corresponds to the first part of the domain that elastic beanstalk gives you.
+
+
+
+
