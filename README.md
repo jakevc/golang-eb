@@ -44,3 +44,11 @@ eb create -s
 ```
 
 This will prompt you to name your environment and DNS names, they should be the same as what you set for your ENV_NAME variable in the https-single-intstance config script.
+
+If all is setup correctly elastic beanstalk will setup your app and all the configuration you can then run:
+
+```
+eb open
+```
+
+and your application will open in your web browser.
