@@ -5,17 +5,35 @@ This repository sets up the golang sample from AWS elastic beanstalk to run on a
 
 # Setup
 
-Make sure to install the AWS eb cli:
+You need:
+
+    - an AWS account
+    - the AWS EB CLI
+
+Install the AWS EB CLI:
 
 ```
-pip install aws-eb-cli
+pip install awsebcli --upgrade --user
 ```
 
+Clone this repository:
+
 ```
-git clone " "
+git clone https://github.com/jakevc/golang-eb.git 
 cd golang-eb 
 eb init
-eb create -s
 ```
 
+Set the following variables in the file `.ebextensions/https-single-instance.cong`:
+
+The ENV_NAME and region are used to construct the CERT_DOMAIN for certbot-auto, if they are incorrect, certbot-auto will fail to correctly create TLS certificates on your instance.
+
+```
+# set these variables for certobot
+ENV_NAME=
+REGION=
+
+# fill out your email
+CERT_EMAIL=
+``` 
 
